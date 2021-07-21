@@ -28,6 +28,11 @@
 </template>
 
 <style lang="postcss" scoped>
+.hero {
+  @apply bg-dark-900;
+  background-image: url('/assets/svg/eyes.svg');
+}
+
 .docs-btn {
   @apply gap-2;
 

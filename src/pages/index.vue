@@ -83,17 +83,9 @@ onMounted(async() => {
 </script>
 
 <template>
-  <NavBar />
   <div class="flex flex-col h-full w-full">
     <Banner />
     <About />
     <Footer />
   </div>
 </template>
-
-<style lang="postcss" scoped>
-
-.hero {
-  background-image: url('/morphing-diamonds.svg');
-}
-</style>
