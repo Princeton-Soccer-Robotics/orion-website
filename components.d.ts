@@ -3,6 +3,8 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    About: typeof import('./src/components/Index/About.vue')['default']
+    Banner: typeof import('./src/components/Index/Banner.vue')['default']
     CarbonCampsite: typeof import('virtual:vite-icons/carbon/campsite')['default']
     CarbonDicomOverlay: typeof import('virtual:vite-icons/carbon/dicom-overlay')['default']
     CarbonLanguage: typeof import('virtual:vite-icons/carbon/language')['default']
@@ -12,7 +14,22 @@ declare module 'vue' {
     CarbonSun: typeof import('virtual:vite-icons/carbon/sun')['default']
     CarbonWarning: typeof import('virtual:vite-icons/carbon/warning')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
+    HBtn: typeof import('./src/components/HBtn.vue')['default']
+    MdiAlert: typeof import('virtual:vite-icons/mdi/alert')['default']
+    MdiBook: typeof import('virtual:vite-icons/mdi/book')['default']
+    MdiChevronDown: typeof import('virtual:vite-icons/mdi/chevron-down')['default']
+    MdiChevronRight: typeof import('virtual:vite-icons/mdi/chevron-right')['default']
+    MdiChevronUp: typeof import('virtual:vite-icons/mdi/chevron-up')['default']
+    MdiCopyright: typeof import('virtual:vite-icons/mdi/copyright')['default']
+    MdiDiscord: typeof import('virtual:vite-icons/mdi/discord')['default']
+    MdiGithub: typeof import('virtual:vite-icons/mdi/github')['default']
+    MdiRobot: typeof import('virtual:vite-icons/mdi/robot')['default']
+    MdiTwitter: typeof import('virtual:vite-icons/mdi/twitter')['default']
+    NavBar: typeof import('./src/components/NavBar.vue')['default']
     README: typeof import('./src/components/README.md')['default']
+    Sidebar: typeof import('./src/components/Sidebar/Sidebar.vue')['default']
+    SidebarItem: typeof import('./src/components/Sidebar/SidebarItem.vue')['default']
+    'SimpleIcons:discord': typeof import('virtual:vite-icons/simple-icons/discord')['default']
   }
 }
 

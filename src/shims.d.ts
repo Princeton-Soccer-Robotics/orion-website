@@ -1,4 +1,5 @@
 /* eslint-disable import/no-duplicates */
+declare module 'particles.js';
 
 declare interface Window {
   // extend the window

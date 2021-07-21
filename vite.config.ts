@@ -10,6 +10,7 @@ import WindiCSS from 'vite-plugin-windicss'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Prism from 'markdown-it-prism'
+import ViteFonts from 'vite-plugin-fonts'
 // @ts-expect-error missing types
 import LinkAttributes from 'markdown-it-link-attributes'
 
@@ -24,6 +25,12 @@ export default defineConfig({
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/],
+    }),
+
+    ViteFonts({
+      google: {
+        families: ['Space Mono'],
+      },
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages
