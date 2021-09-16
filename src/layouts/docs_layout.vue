@@ -1,10 +1,16 @@
 <script lang="ts" setup>
-const pages = reactive([{
-  name: 'UwU',
-  children: [
-    { name: 'Home' },
-  ],
-}])
+import type { IEntry } from '~/components/Sidebar/types'
+
+const pages = reactive<IEntry[]>([
+  { name: 'Home', path: '' },
+  { name: 'Hello', path: 'hello' },
+  {
+    name: 'Robocup 2021',
+    children: [
+      { name: 'Introduction', path: 'robocup/introduction' },
+    ],
+  },
+])
 </script>
 
 <template>

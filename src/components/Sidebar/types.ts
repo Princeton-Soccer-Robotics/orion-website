@@ -1,6 +1,6 @@
 export interface IEntry {
   name: string
   open?: boolean
-  selected?: boolean
+  path?: string
   children?: IEntry[]
 }

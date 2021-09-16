@@ -14,7 +14,7 @@ import ViteFonts from 'vite-plugin-fonts'
 // @ts-expect-error missing types
 import LinkAttributes from 'markdown-it-link-attributes'
 
-const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
+const markdownWrapperClasses = 'prose-sm max-w-120ch p-24 text-left w-full flex-1 min-w-0'
 
 export default defineConfig({
   resolve: {
