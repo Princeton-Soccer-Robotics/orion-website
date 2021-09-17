@@ -4,6 +4,7 @@ import type { IEntry } from '~/components/Sidebar/types'
 const pages = reactive<IEntry[]>([
   { name: 'Home', path: '' },
   { name: 'Hello', path: 'hello' },
+  { name: 'History', path: 'history' },
   {
     name: 'Robocup 2021',
     children: [
