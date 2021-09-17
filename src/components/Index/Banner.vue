@@ -1,3 +1,87 @@
+<script lang="ts" setup>
+import { tsParticles } from 'tsparticles'
+import { ref, onMounted } from 'vue'
+
+onMounted(async() => {
+  await tsParticles.load('bg', {
+    interactivity: {
+      detectsOn: 'window',
+      modes: {
+        bubble: {
+          distance: 400,
+          duration: 2,
+          opacity: 0.8,
+          size: 40,
+        },
+        grab: {
+          distance: 200,
+        },
+      },
+      events: {
+        onHover: {
+          enable: true,
+          mode: 'grab',
+          parallax: {
+            enable: true,
+            force: 150,
+            smooth: 20,
+          },
+        },
+      },
+    },
+    particles: {
+      color: {
+        value: '#ffffff',
+      },
+      links: {
+        color: {
+          value: '#ffffff',
+        },
+        distance: 60,
+        enable: true,
+        warp: true,
+      },
+      move: {
+        attract: {
+          rotate: {
+            x: 50,
+            y: 50,
+          },
+        },
+        enable: true,
+        outModes: 'out',
+        speed: 0.5,
+        warp: true,
+      },
+      number: {
+        density: {
+          enable: true,
+        },
+        value: 20,
+      },
+      opacity: {
+        value: 0.5,
+        animation: {
+          speed: 3,
+          minimumValue: 0.1,
+        },
+      },
+      size: {
+        random: true,
+        value: {
+          min: 1,
+          max: 3,
+        },
+        animation: {
+          speed: 20,
+          minimumValue: 0.1,
+        },
+      },
+    },
+  })
+})
+</script>
+
 <template>
   <div class="hero relative bg-dark-800 z-0">
     <div id="bg" class="-z-1 absolute w-full h-full" />
@@ -9,7 +93,7 @@
         <p class="mb-4 text-gray-300 text-xl">
           A US-based RoboCup Junior team
         </p>
-        <div class="flex gap-4">
+        <div class="flex gap-4 flex-wrap">
           <HBtn class="docs-btn">
             Robocup 2021 case study
             <mdi-chevron-right />
